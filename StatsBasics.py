@@ -1,6 +1,6 @@
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats as sp
-import matplotlib.pyplot as plt
 
 
 def plot_hist(data):
@@ -12,6 +12,10 @@ def mean_median_mode(data):
     print 'mean : %r' % np.mean(data)
     print 'median : %r' % np.median(data)
     print sp.mode(data)
+
+
+def mean(data):
+    return sum(data) / len(data)
 
 
 def std_var(np_array):
@@ -31,4 +35,4 @@ def moments(data):
     print 'Third moment: Skewness = %r' % sp.skew(np_array)
     print 'Fourth moment: Kurtosis = %r' % sp.kurtosis(np_array)
 
-xth_percentile([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 99)
+# xth_percentile([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 99)
