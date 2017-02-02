@@ -42,7 +42,7 @@ def error(point):
     :param point:
     :return: WSSSE
     """
-    centre = clusters.centres[clusters.predict(point)]
+    centre = clusters.centers[clusters.predict(point)]
     return sqrt(sum([x ** 2 for x in (point - centre)]))
 
 
